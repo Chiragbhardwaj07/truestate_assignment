@@ -16,6 +16,7 @@ function StatsDeck({ totalUnits, totalAmount, totalDiscount, totalTransactions }
             </div>
 
             <div className="stat-card">
+                {/* header */}
                 <div className="stat-header">
                     <span>Total Amount</span>
                     <Info size={14} color="#94a3b8" />
