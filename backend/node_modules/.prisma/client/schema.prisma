@@ -1,0 +1,37 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model users_sales {
+  transaction_id      String    @id
+  tx_date             DateTime?
+  customer_id         String?
+  customer_name       String?
+  phone_number        String?
+  gender              String?
+  age                 Int?
+  customer_region     String?
+  customer_type       String?
+  product_id          String?
+  product_name        String?
+  brand               String?
+  product_category    String?
+  tags                String?
+  quantity            Int?
+  price_per_unit      Decimal?
+  discount_percentage Decimal?
+  total_amount        Decimal?
+  final_amount        Decimal?
+  payment_method      String?
+  order_status        String?
+  delivery_type       String?
+  store_id            String?
+  store_location      String?
+  salesperson_id      String?
+  employee_name       String?
+}
